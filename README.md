@@ -24,7 +24,7 @@ alt="IMAGE ALT TEXT HERE" width="1280" height="720" border="10" /></a>
 
 3) Se elige el fichero .HEX
 
-4) Se da click en "yar har fiddle di dee"
+4) Se da click en "yar har fiddle tee dee"
 
 5) Se enciende la PICTOR o se pulsa el reset
 
