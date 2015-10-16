@@ -9,7 +9,8 @@
 
 ## Descarga
 
-Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.0/YarHarPictorv1_0_BETA.zip
+Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.1/YarHarPictorv1_1.zip
+Ver cambios 1.1: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.1
 
 ## Imagen y Vídeo
 
