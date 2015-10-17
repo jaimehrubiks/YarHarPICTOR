@@ -6,6 +6,7 @@
   - Automatización del grabado del programa sólo con dar a start y encender la PICTOR.
   - Protección añadida al pulsado involuntario del reset (~0.25s del circuito RC del reset + 3 segundos de YarHarPictor).
   - Protección contra el borrado o variación del fichero .hex en tiempo de conexión.
+  - Modo HyperTerminal con función para envío de ficheros.
 
 ## Descarga
 
@@ -17,7 +18,7 @@ Ver cambios 1.1: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.1
 
 <a href="https://www.youtube.com/watch?v=_tAKQwJ5mWk
 " target="_blank"><img src="https://i.imgur.com/zhWHPzt.png" 
-alt="IMAGE ALT TEXT HERE" width="900" height="659" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="800" height="590" border="10" /></a>
 
 ## Modo de uso
 1)  Se selecciona una carpeta con ficheros .hex se puede seleccionar una carpeta con muchas subcarpetas y proyectos, elevando el valor de "depth".
