@@ -36,4 +36,4 @@ alt="IMAGE ALT TEXT HERE" width="800" height="590" border="10" /></a>
     Especial mención al progama KudeaPIC de la PICTOR UPV/EHU y al usuario de github / posible antiguo alumno Darkeye9 por la idea gracias a su script de línea de comandos para una versión de pictor.
     
 ## Código
-  Compartiré el código quizá al acabar el curso, no quiero versiones alternativas que no funcionen correctamente.
+  No tengo problema en compartir el código. De momento no lo publico para evitar versiones alternativas que puede que no funcionen bien o estropeen la pictor. Cualquier sugerencia es bienvenida, en persona, email o en github en 'issues'
