@@ -14,6 +14,7 @@
 Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.2/YarHarPictorv1_2.zip
 
 Ver cambios 1.1: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.1
+
 Ver cambios 1.2: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.2
 
 ## Imagen y Vídeo
