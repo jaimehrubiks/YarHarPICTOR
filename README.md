@@ -19,7 +19,7 @@ Ver cambios 1.2: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.2
 ## Imagen y Vídeo
 
 <a href="https://www.youtube.com/watch?v=_tAKQwJ5mWk
-" target="_blank"><img src="https://i.imgur.com/zhWHPzt.png" 
+" target="_blank"><img src="https://i.imgur.com/jKQKKc3.png" 
 alt="IMAGE ALT TEXT HERE" width="800" height="590" border="10" /></a>
 
 ## Modo de uso
