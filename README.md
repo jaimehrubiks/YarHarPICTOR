@@ -7,12 +7,14 @@
   - Protección añadida al pulsado involuntario del reset (~0.25s del circuito RC del reset + 3 segundos de YarHarPictor).
   - Protección contra el borrado o variación del fichero .hex en tiempo de conexión.
   - Modo HyperTerminal con función para envío de ficheros.
+  - Modo debug para leer la memoria de datos.
 
 ## Descarga
 
-Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.1/YarHarPictorv1_1.zip
+Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.2/YarHarPictorv1_2.zip
 
 Ver cambios 1.1: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.1
+Ver cambios 1.2: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.2
 
 ## Imagen y Vídeo
 
@@ -30,6 +32,16 @@ alt="IMAGE ALT TEXT HERE" width="800" height="590" border="10" /></a>
 4) Se da click en "yar har fiddle tee dee"
 
 5) Se enciende la PICTOR o se pulsa el reset
+
+## Como debuggear un programa en la propia pictor (no simulando con mplab)
+
+1) Se programa la instrucción "GOTO $" en cualquier parte del programa donde queramos revisar los valores de memoria.
+
+2) Se pulsa el botón de "memory DUMP".
+
+3) Se pulsa reset
+
+Nota: Al hacer esto no se sale de kudeapic hasta pulsar reset o regrabar el programa.
 
 ## Autor
     Jaime Hidalgo García.
