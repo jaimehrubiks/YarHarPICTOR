@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" pref="0" max="32767" attributes="0"/>
+                  <Component id="jButton1" max="32767" attributes="0"/>
+                  <Component id="jButton2" alignment="0" pref="546" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" pref="238" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; &#x9;&lt;head&gt; &#x9;&#x9;&lt;title&gt;&lt;/title&gt; &#x9;&lt;/head&gt; &#x9;&lt;body&gt; &#x9;&#x9;&lt;h2&gt; &#x9;&#x9;&#x9;YAR HAR PICTOR&amp;nbsp;&lt;/h2&gt; &#x9;&#x9;&lt;p&gt; &#x9;&#x9;&#x9;Una aplicaci&amp;oacute;n para flashear programas .HEX a la pictor utilizando el puerto serie mediante la interfaz de KudeaPIC.&lt;/p&gt; &#x9;&#x9;&lt;h3 style=&quot;color:red;&quot;&gt; &#x9;&#x9;&#x9;Atenci&amp;oacute;n:&lt;/h3&gt; &#x9;&#x9;&lt;p&gt; &#x9;&#x9;&#x9;La aplicaci&amp;oacute;n posee medidas de seguridad como protecci&amp;oacute;n contra el borrado o modificacion del fichero .hex mientras se env&amp;iacute;a, protecci&amp;oacute;n contra el presionado del reset m&amp;uacute;ltiples veces al principio etc.&lt;/p&gt; &#x9;&#x9;&lt;p&gt; &#x9;&#x9;&#x9;No obstante, usa el programa bajo tu responsabilidad, sabiendo que un uso indebido, corte durante la conexi&amp;oacute;n, env&amp;iacute;o de un programa mal dise&amp;ntilde;ado etc. podr&amp;iacute;a borrar kudeaPIC de la memoria.&lt;/p&gt; &#x9;&#x9;&lt;p&gt; &#x9;&#x9;&#x9;&amp;nbsp;&lt;/p&gt; &#x9;&lt;/body&gt; &lt;/html&gt; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="HE LE&#xcd;DO Y ACEPTO USARLO BAJO MI RESPONSABILIDAD"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NAH.. ME QUEDO CON MI HYPERTERMINAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
