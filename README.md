@@ -7,15 +7,19 @@
   - Protección añadida al pulsado involuntario del reset (~0.25s del circuito RC del reset + 3 segundos de YarHarPictor).
   - Protección contra el borrado o variación del fichero .hex en tiempo de conexión.
   - Modo HyperTerminal con función para envío de ficheros.
-  - Modo debug para leer la memoria de datos.
+  - Modo debug para leer la memoria de datos, con nombres de variables.
 
 ## Descarga
 
-Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.2/YarHarPictorv1_2.zip
+Enlace: https://github.com/jaimehrubiks/YarHarPICTOR/releases/download/v1.3/YarHarPictorv1_3.zip
+
+Ver cambios 1.3: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.3
+
+Ver cambios 1.2: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.2
 
 Ver cambios 1.1: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.1
 
-Ver cambios 1.2: https://github.com/jaimehrubiks/YarHarPICTOR/releases/tag/v1.2
+
 
 ## Imagen y Vídeo
 
