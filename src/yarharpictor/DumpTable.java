@@ -6,10 +6,14 @@
  */
 package yarharpictor;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.table.DefaultTableCellRenderer;
+import yarharpictor.tools.EquFetcher;
+import yarharpictor.tools.UserSettings;
 
 /**
  *
@@ -27,7 +31,7 @@ public class DumpTable extends javax.swing.JFrame {
      */
     public DumpTable(String s) {
         rx = s;
-        String[] columnNames = new String[]{ "Address [HEX]" , "Value [HEX]" , "Value [DEC]" , "Value [BIN]"};
+        String[] columnNames = new String[]{ "Address [HEX]" , "Value [HEX]" , "Value [DEC]" , "Value [BIN]", "Memory Name"};
         model = new TableModel(columnNames,0);
         
         
@@ -39,6 +43,8 @@ public class DumpTable extends javax.swing.JFrame {
         
         stringToMap();
         populateTable();
+        
+        loadDefNames();
     }
 
     /**
@@ -52,29 +58,71 @@ public class DumpTable extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jTable1.setModel(model);
         jScrollPane1.setViewportView(jTable1);
+
+        jButton1.setText("LOAD VARIABLE NAMES FROM CODE");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("PAGE 1 MEMORY TABLE");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(168, 168, 168)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 536, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jLabel1});
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File( UserSettings.configProps.getProperty("FilesFolder") ));
+        int result = fileChooser.showOpenDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            if(selectedFile.isFile()){
+                EquFetcher equ = new EquFetcher();
+                String[] s = equ.getNames(selectedFile.getAbsolutePath());
+                for (int i = 32; i < s.length; i++) {
+                    model.setValueAt("<html><b>"+s[i]+"</b></html>", i, model.getColumnCount() - 1);
+        }
+            }
+        }
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,7 +154,7 @@ public class DumpTable extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //new DumpTable().setVisible(true);
+                new DumpTable("").setVisible(true);
                 
             }
         });
@@ -142,6 +190,15 @@ public class DumpTable extends javax.swing.JFrame {
 //        }
     }
     
+    private void loadDefNames(){
+        EquFetcher equ = new EquFetcher();
+        String[] s = equ.getDefNames();
+        System.out.println("length" +s.length);
+        for(int i = 0 ; i < s.length ; i++ ){
+            model.setValueAt(s[i], i, model.getColumnCount()-1);
+        }
+    }
+    
     private void populateTable(){
         String tmp;
         String hex;
@@ -173,7 +230,11 @@ public class DumpTable extends javax.swing.JFrame {
     }
     
     
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

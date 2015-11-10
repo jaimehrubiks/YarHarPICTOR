@@ -37,9 +37,7 @@
                       <Component id="i_sendfile" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="i_sendfile1" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="i_debug" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="i_label" min="-2" pref="332" max="-2" attributes="0"/>
                           <Component id="i_label2" max="32767" attributes="0"/>
@@ -62,7 +60,6 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="i_sendfile" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="i_sendfile1" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="i_debug" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="i_connect" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
@@ -159,14 +156,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Set settings in main Window."/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="i_debug">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="DEBUG MEMORY"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="i_debugActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

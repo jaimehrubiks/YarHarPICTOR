@@ -89,11 +89,11 @@ public class YarDump {
             int mask = SerialPort.MASK_RXCHAR + SerialPort.MASK_CTS + SerialPort.MASK_DSR;  //Prepare mask
             serialPort.setEventsMask(mask);                                                 //Set mask
             serialPort.addEventListener(new SerialPortReader());   
-            try {
-                serialPort.writeBytes("\r".getBytes());
-            }catch (SerialPortException ex){
-                ;
-            }
+//            try {
+//                serialPort.writeBytes("\r".getBytes());
+//            }catch (SerialPortException ex){
+//                ;
+//            }
         } catch (SerialPortException ex) {
             System.out.println(ex);
             ref.setBarConfig(Color.RED, null, null, null,StaticStrings.DEFBAR_PROG_TOPCOLOR, "ERROR. Serial port not available.");

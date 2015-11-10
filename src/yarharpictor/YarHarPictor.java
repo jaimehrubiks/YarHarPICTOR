@@ -47,7 +47,7 @@ public class YarHarPictor extends javax.swing.JFrame {
     warning war = null;
     YarPicTerminal ter = null;
     
-    File    selected;
+    public static File    selected;
     String  port;
     boolean portinit = false;
     //WebProgressBar b = new WebProgressbar();

@@ -79,7 +79,6 @@ public class YarPicTerminal extends javax.swing.JFrame {
         i_label = new javax.swing.JLabel();
         i_sendfile1 = new javax.swing.JButton();
         i_label2 = new javax.swing.JLabel();
-        i_debug = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("YarPic Terminal");
@@ -129,13 +128,6 @@ public class YarPicTerminal extends javax.swing.JFrame {
 
         i_label2.setText("Set settings in main Window.");
 
-        i_debug.setText("DEBUG MEMORY");
-        i_debug.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                i_debugActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -152,9 +144,7 @@ public class YarPicTerminal extends javax.swing.JFrame {
                         .addComponent(i_sendfile)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(i_sendfile1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(i_debug)
-                        .addGap(73, 73, 73)
+                        .addGap(224, 224, 224)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(i_label, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(i_label2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -165,7 +155,7 @@ public class YarPicTerminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {i_connect, i_debug, i_dis, i_sendfile, i_sendfile1});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {i_connect, i_dis, i_sendfile, i_sendfile1});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,8 +164,7 @@ public class YarPicTerminal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(i_sendfile)
-                        .addComponent(i_sendfile1)
-                        .addComponent(i_debug))
+                        .addComponent(i_sendfile1))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(i_connect, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(i_dis))
@@ -192,7 +181,7 @@ public class YarPicTerminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {i_connect, i_debug, i_dis, i_sendfile, i_sendfile1});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {i_connect, i_dis, i_sendfile, i_sendfile1});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -243,11 +232,6 @@ public class YarPicTerminal extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_i_sendfile1ActionPerformed
-
-    private void i_debugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_i_debugActionPerformed
-            // TODO add your handling code here:
-        //yar.startMemoryDump();
-    }//GEN-LAST:event_i_debugActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,7 +286,6 @@ public class YarPicTerminal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton i_connect;
-    private javax.swing.JButton i_debug;
     private javax.swing.JButton i_dis;
     private javax.swing.JLabel i_label;
     private javax.swing.JLabel i_label2;
