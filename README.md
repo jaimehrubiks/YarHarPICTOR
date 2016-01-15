@@ -53,4 +53,4 @@ Nota: Al hacer esto no se sale de kudeapic hasta pulsar reset o regrabar el prog
     Especial mención al progama KudeaPIC de la PICTOR UPV/EHU y al usuario de github / posible antiguo alumno Darkeye9 por la idea gracias a su script de línea de comandos para una versión de pictor.
     
 ## Código
-  No tengo problema en compartir el código. De momento no lo publico para evitar versiones alternativas que puede que no funcionen bien o estropeen la pictor. Cualquier sugerencia es bienvenida, en persona, email o en github en 'issues'
+  Como prometí en si día, el código está publicado aquí en github. Es un poco desordenado pero se pueden ajustar cosas si algún día cambia el sistema.
