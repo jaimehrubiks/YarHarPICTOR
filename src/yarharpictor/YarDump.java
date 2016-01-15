@@ -37,7 +37,7 @@ public class YarDump {
      * @param args the command line arguments
      */
     
-    private  int lineDelay    = 100;
+    private  int lineDelay    = 500;
     
     private  int baudRate     = SerialPort.BAUDRATE_9600;
     private  int dataBits     = SerialPort.DATABITS_8;
